@@ -1,0 +1,12 @@
+Pregunta 1: Un DStream (Discretized Stream) es una abstracción fundamental en Apache Spark Streaming, una extensión de Apache Spark para procesamiento en tiempo real de datos en streaming. Un DStream es una secuencia de RDDs (Resilient Distributed Datasets) que representan un flujo de datos distribuido y continuo. Los DStreams permiten el procesamiento de datos en tiempo real dividiendo el flujo en pequeños lotes discretos, que se pueden procesar utilizando operaciones como map, reduce, filter, etc.
+
+Pregunta 2: Los orígenes de datos que se pueden utilizar con DStreams incluyen diversas fuentes de datos en tiempo real. Algunos de los más comunes son:
+
+Archivos en HDFS, S3, o sistemas de archivos locales: Spark Streaming puede leer archivos que se escriben continuamente en directorios, como en el caso de logs que se generan de manera continua.
+Kafka: Un sistema de mensajería popular que puede transmitir flujos de datos en tiempo real, ideal para integrarse con Spark Streaming.
+Flume: Una herramienta de recolección de datos distribuida que permite el envío de datos en tiempo real desde diversas fuentes hacia sistemas como HDFS, HBase o incluso Spark Streaming.
+Socket de red: Los DStreams pueden recibir datos directamente desde un socket, lo cual es útil para situaciones en las que se generan flujos de datos en tiempo real, como en aplicaciones de monitoreo.
+Bases de datos NoSQL (como HBase): Spark Streaming puede consumir datos de bases de datos NoSQL que permiten operaciones rápidas y en tiempo real.
+RSS o HTTP: También es posible consumir datos en tiempo real de fuentes como feeds RSS o a través de peticiones HTTP, utilizando conectores personalizados.
+
+
